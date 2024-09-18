@@ -6,8 +6,19 @@
     "start": "next start"
   },
   "dependencies": {
+    "@descope/nextjs-sdk": "^0.2.9",
     "next": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  }
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^4.5.5"
+  },
+  "engines": {
+    "node": "^20"
+  },
+  "packageManager": "yarn@4.5.0"
 }

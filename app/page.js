@@ -1,8 +1,26 @@
+import { AuthProvider, SignUpOrInFlow } from "@descope/nextjs-sdk";
 import { headers } from "next/headers";
-import Script from "next/script";
 
 export default function Page() {
   const nonce = headers().get("x-nonce");
-
-  return <Script src="https://..." strategy="afterInteractive" nonce={nonce} />;
+  const projectId = headers().get("x-project-id");
+  const baseUrl = headers().get("x-base-url");
+  return (
+    <AuthProvider
+      projectId={projectId}
+      baseUrl={baseUrl}
+      baseStaticUrl={baseUrl + "/pages"}
+    >
+      <pre>
+        Nonce: {nonce}
+        <br />
+        ProjectID: {projectId}
+        <br />
+        BaseURL: {baseUrl}
+        <br />
+        Set URL params to change the project ID and base URL.
+      </pre>
+      <SignUpOrInFlow />
+    </AuthProvider>
+  );
 }

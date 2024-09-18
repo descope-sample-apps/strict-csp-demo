@@ -1,15 +1,17 @@
 import { NextResponse } from "next/server";
 
 export function middleware(request) {
+  // set csp
   const nonce = Buffer.from(crypto.randomUUID()).toString("base64");
   const cspHeader = `
+    connect-src 'self' static.descope.org static.descope.com api.descope.org api.descope.com;
     default-src 'self';
-    script-src 'self' 'nonce-${nonce}' 'strict-dynamic' https: http: ${
-      process.env.NODE_ENV === "production" ? "" : `'unsafe-eval'`
-    };
-    style-src 'self' 'nonce-${nonce}';
-    img-src 'self' blob: data:;
-    font-src 'self';
+    script-src 'self' 'nonce-${nonce}' 'strict-dynamic' https: http: static.descope.org static.descope.com ${
+    process.env.NODE_ENV === "production" ? "" : `'unsafe-eval'`
+  };
+    style-src 'self' 'unsafe-inline' fonts.googleapis.com; 
+    img-src 'self' blob: data: static.descope.org static.descope.com;
+    font-src 'self' fonts.gstatic.com static.descope.org static.descope.com data:;
     object-src 'none';
     base-uri 'self';
     form-action 'self';
@@ -25,7 +27,7 @@ export function middleware(request) {
   requestHeaders.set("x-nonce", nonce);
   requestHeaders.set(
     "Content-Security-Policy",
-    contentSecurityPolicyHeaderValue,
+    contentSecurityPolicyHeaderValue
   );
 
   const response = NextResponse.next({
@@ -35,8 +37,28 @@ export function middleware(request) {
   });
   response.headers.set(
     "Content-Security-Policy",
-    contentSecurityPolicyHeaderValue,
+    contentSecurityPolicyHeaderValue
   );
+
+  // get config from request params
+  const url = new URL(request.url);
+  const projectId = url.searchParams.get("projectId");
+  const baseUrl = url.searchParams.get("baseUrl");
+
+  const DEFAULT_PROJECT = "P2CqCdq2bnO9JS2awFKlIPngwPUK";
+  const DEFAULT_BASE_URL = "https://api.descope.org";
+
+  if (!projectId || !baseUrl) {
+    return NextResponse.redirect(
+      new URL(
+        `/?projectId=${DEFAULT_PROJECT}&baseUrl=${DEFAULT_BASE_URL}`,
+        url.origin
+      )
+    );
+  }
+
+  response.headers.set("x-project-id", projectId);
+  response.headers.set("x-base-url", baseUrl);
 
   return response;
 }
