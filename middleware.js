@@ -11,7 +11,7 @@ export function middleware(request) {
   };
     style-src 'self' 'unsafe-inline' fonts.googleapis.com; 
     img-src 'self' blob: data: static.descope.org static.descope.com;
-    font-src 'self' fonts.gstatic.com static.descope.org static.descope.com data:;
+    font-src 'self' fonts.gstatic.com static.descope.org static.descope.com;
     object-src 'none';
     base-uri 'self';
     form-action 'self';
