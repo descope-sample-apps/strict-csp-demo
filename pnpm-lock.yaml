@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@descope/nextjs-sdk':
         specifier: ^0.14.0
-        version: 0.14.0(@reduxjs/toolkit@2.8.2(react@19.1.0))(@types/react@19.1.8)(immer@10.1.1)(next@15.4.8(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)
+        version: 0.14.0(@reduxjs/toolkit@2.8.2(react@19.1.0))(@types/react@19.1.8)(immer@10.1.1)(next@15.4.9(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)
       next:
-        specifier: 15.4.8
-        version: 15.4.8(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+        specifier: 15.4.9
+        version: 15.4.9(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: 19.1.0
         version: 19.1.0
@@ -228,8 +228,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@next/env@15.4.8':
-    resolution: {integrity: sha512-LydLa2MDI1NMrOFSkO54mTc8iIHSttj6R6dthITky9ylXV2gCGi0bHQjVCtLGRshdRPjyh2kXbxJukDtBWQZtQ==}
+  '@next/env@15.4.9':
+    resolution: {integrity: sha512-OYR0RulK5phnbxxzcLE4/ECgfx1PL3EHrDbjyelJ7jauaO+/Qvj5gG8JPMltB51CygC2KrZ0aAfYLjPYjYY17A==}
 
   '@next/swc-darwin-arm64@15.4.8':
     resolution: {integrity: sha512-Pf6zXp7yyQEn7sqMxur6+kYcywx5up1J849psyET7/8pG2gQTVMjU3NzgIt8SeEP5to3If/SaWmaA6H6ysBr1A==}
@@ -365,9 +365,10 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
-  next@15.4.8:
-    resolution: {integrity: sha512-jwOXTz/bo0Pvlf20FSb6VXVeWRssA2vbvq9SdrOPEg9x8E1B27C2rQtvriAn600o9hH61kjrVRexEffv3JybuA==}
+  next@15.4.9:
+    resolution: {integrity: sha512-/NedNmbiH4Umt/7SohT9VKxEdBt02Lj33xHrukE7d8Li6juT+75sEq4a4U06jggrvdbklKgr78OZEyWZ8XRrtw==}
     engines: {node: ^18.18.0 || ^19.8.0 || >= 20.0.0}
+    deprecated: This version has a security vulnerability. Please upgrade to a patched version. See https://nextjs.org/blog/security-update-2025-12-11 for more details.
     hasBin: true
     peerDependencies:
       '@opentelemetry/api': ^1.1.0
@@ -534,14 +535,14 @@ snapshots:
 
   '@descope/escape-markdown@0.1.5': {}
 
-  '@descope/nextjs-sdk@0.14.0(@reduxjs/toolkit@2.8.2(react@19.1.0))(@types/react@19.1.8)(immer@10.1.1)(next@15.4.8(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)':
+  '@descope/nextjs-sdk@0.14.0(@reduxjs/toolkit@2.8.2(react@19.1.0))(@types/react@19.1.8)(immer@10.1.1)(next@15.4.9(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)':
     dependencies:
       '@descope/core-js-sdk': 2.44.4
       '@descope/node-sdk': 1.6.13
       '@descope/react-sdk': 2.14.26(@reduxjs/toolkit@2.8.2(react@19.1.0))(@types/react@19.1.8)(immer@10.1.1)(react@19.1.0)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)
       '@descope/web-component': 3.43.19(@reduxjs/toolkit@2.8.2(react@19.1.0))(immer@10.1.1)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)
       '@types/react': 19.1.8
-      next: 15.4.8(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      next: 15.4.9(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react: 19.1.0
     optionalDependencies:
       '@descope/web-js-sdk': 1.33.5
@@ -771,7 +772,7 @@ snapshots:
   '@img/sharp-win32-x64@0.34.3':
     optional: true
 
-  '@next/env@15.4.8': {}
+  '@next/env@15.4.9': {}
 
   '@next/swc-darwin-arm64@15.4.8':
     optional: true
@@ -878,9 +879,9 @@ snapshots:
 
   nanoid@3.3.11: {}
 
-  next@15.4.8(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+  next@15.4.9(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
     dependencies:
-      '@next/env': 15.4.8
+      '@next/env': 15.4.9
       '@swc/helpers': 0.5.15
       caniuse-lite: 1.0.30001727
       postcss: 8.4.31
