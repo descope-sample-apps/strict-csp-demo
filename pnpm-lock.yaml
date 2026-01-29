@@ -10,16 +10,16 @@ importers:
     dependencies:
       '@descope/nextjs-sdk':
         specifier: ^0.14.0
-        version: 0.14.0(@reduxjs/toolkit@2.8.2(react@19.1.0))(@types/react@19.1.8)(immer@10.1.1)(next@16.1.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)
+        version: 0.14.0(@reduxjs/toolkit@2.8.2(react@19.2.4))(@types/react@19.1.8)(immer@10.1.1)(next@16.1.5(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react@19.2.4)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)
       next:
         specifier: 16.1.5
-        version: 16.1.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+        version: 16.1.5(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       react:
-        specifier: 19.1.0
-        version: 19.1.0
+        specifier: 19.2.4
+        version: 19.2.4
       react-dom:
-        specifier: 19.1.0
-        version: 19.1.0(react@19.1.0)
+        specifier: 19.2.4
+        version: 19.2.4(react@19.2.4)
     devDependencies:
       '@types/node':
         specifier: ^24.0.0
@@ -424,13 +424,13 @@ packages:
     resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
     engines: {node: ^10 || ^12 || >=14}
 
-  react-dom@19.1.0:
-    resolution: {integrity: sha512-Xs1hdnE+DyKgeHJeJznQmYMIBG3TKIHJJT95Q58nHLSrElKlGQqDTR2HQ9fx5CN/Gk6Vh/kupBTDLU11/nDk/g==}
+  react-dom@19.2.4:
+    resolution: {integrity: sha512-AXJdLo8kgMbimY95O2aKQqsz2iWi9jMgKJhRBAxECE4IFxfcazB2LmzloIoibJI3C12IlY20+KFaLv+71bUJeQ==}
     peerDependencies:
-      react: ^19.1.0
+      react: ^19.2.4
 
-  react@19.1.0:
-    resolution: {integrity: sha512-FS+XFBNvn3GTAWq26joslQgWNoFu08F4kl0J4CgdNKADkdSGXQyTCnKteIAJy96Br6YbpEU1LSzV5dYtjMkMDg==}
+  react@19.2.4:
+    resolution: {integrity: sha512-9nfp2hYpCwOjAN+8TZFGhtWEwgvWHXqESH8qT89AT/lWklpLON22Lc8pEtnpsZz7VmawabSU0gCjnj8aC0euHQ==}
     engines: {node: '>=0.10.0'}
 
   redux-thunk@3.1.0:
@@ -444,8 +444,8 @@ packages:
   reselect@5.1.1:
     resolution: {integrity: sha512-K/BG6eIky/SBpzfHZv/dd+9JBFiS4SWV7FIujVyJRux6e45+73RaUHXLmIR1f7WOMaQ0U1km6qwklRQxpJJY0w==}
 
-  scheduler@0.26.0:
-    resolution: {integrity: sha512-NlHwttCI/l5gCPR3D1nNXtWABUmBwvZpEQiD4IXSbIDq8BzLIK/7Ir5gTFSGZDUu37K5cMNp0hFtzO38sC7gWA==}
+  scheduler@0.27.0:
+    resolution: {integrity: sha512-eNv+WrVbKu1f3vbYJT/xtiF5syA5HPIMtf9IgY/nKg0sWqzAUEvqY/xm7OcZc/qafLx/iO9FgOmeSAp4v5ti/Q==}
 
   semver@7.7.3:
     resolution: {integrity: sha512-SdsKMrI9TdgjdweUSR9MweHA4EJ8YxHn8DFaDisvhVlUOe4BF1tLD7GAj0lIqWVl+dPb/rExr0Btby5loQm20Q==}
@@ -495,13 +495,13 @@ packages:
 
 snapshots:
 
-  '@descope/access-key-management-widget@0.4.31(react@19.1.0)':
+  '@descope/access-key-management-widget@0.4.31(react@19.2.4)':
     dependencies:
       '@descope/sdk-component-drivers': 0.2.52
       '@descope/sdk-helpers': 0.3.0
-      '@descope/sdk-mixins': 0.13.6(@reduxjs/toolkit@2.8.2(react@19.1.0))(immer@10.1.1)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)
+      '@descope/sdk-mixins': 0.13.6(@reduxjs/toolkit@2.8.2(react@19.2.4))(immer@10.1.1)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)
       '@descope/web-js-sdk': 1.33.5
-      '@reduxjs/toolkit': 2.8.2(react@19.1.0)
+      '@reduxjs/toolkit': 2.8.2(react@19.2.4)
       immer: 10.1.1
       redux: 5.0.1
       redux-thunk: 3.1.0(redux@5.0.1)
@@ -511,13 +511,13 @@ snapshots:
       - react
       - react-redux
 
-  '@descope/applications-portal-widget@0.3.31(react@19.1.0)':
+  '@descope/applications-portal-widget@0.3.31(react@19.2.4)':
     dependencies:
       '@descope/sdk-component-drivers': 0.2.52
       '@descope/sdk-helpers': 0.3.0
-      '@descope/sdk-mixins': 0.13.6(@reduxjs/toolkit@2.8.2(react@19.1.0))(immer@10.1.1)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)
+      '@descope/sdk-mixins': 0.13.6(@reduxjs/toolkit@2.8.2(react@19.2.4))(immer@10.1.1)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)
       '@descope/web-js-sdk': 1.33.5
-      '@reduxjs/toolkit': 2.8.2(react@19.1.0)
+      '@reduxjs/toolkit': 2.8.2(react@19.2.4)
       immer: 10.1.1
       redux: 5.0.1
       redux-thunk: 3.1.0(redux@5.0.1)
@@ -527,13 +527,13 @@ snapshots:
       - react
       - react-redux
 
-  '@descope/audit-management-widget@0.4.31(react@19.1.0)':
+  '@descope/audit-management-widget@0.4.31(react@19.2.4)':
     dependencies:
       '@descope/sdk-component-drivers': 0.2.52
       '@descope/sdk-helpers': 0.3.0
-      '@descope/sdk-mixins': 0.13.6(@reduxjs/toolkit@2.8.2(react@19.1.0))(immer@10.1.1)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)
+      '@descope/sdk-mixins': 0.13.6(@reduxjs/toolkit@2.8.2(react@19.2.4))(immer@10.1.1)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)
       '@descope/web-js-sdk': 1.33.5
-      '@reduxjs/toolkit': 2.8.2(react@19.1.0)
+      '@reduxjs/toolkit': 2.8.2(react@19.2.4)
       immer: 10.1.1
       redux: 5.0.1
       redux-thunk: 3.1.0(redux@5.0.1)
@@ -553,15 +553,15 @@ snapshots:
 
   '@descope/escape-markdown@0.1.5': {}
 
-  '@descope/nextjs-sdk@0.14.0(@reduxjs/toolkit@2.8.2(react@19.1.0))(@types/react@19.1.8)(immer@10.1.1)(next@16.1.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)':
+  '@descope/nextjs-sdk@0.14.0(@reduxjs/toolkit@2.8.2(react@19.2.4))(@types/react@19.1.8)(immer@10.1.1)(next@16.1.5(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react@19.2.4)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)':
     dependencies:
       '@descope/core-js-sdk': 2.44.4
       '@descope/node-sdk': 1.6.13
-      '@descope/react-sdk': 2.14.26(@reduxjs/toolkit@2.8.2(react@19.1.0))(@types/react@19.1.8)(immer@10.1.1)(react@19.1.0)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)
-      '@descope/web-component': 3.43.19(@reduxjs/toolkit@2.8.2(react@19.1.0))(immer@10.1.1)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)
+      '@descope/react-sdk': 2.14.26(@reduxjs/toolkit@2.8.2(react@19.2.4))(@types/react@19.1.8)(immer@10.1.1)(react@19.2.4)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)
+      '@descope/web-component': 3.43.19(@reduxjs/toolkit@2.8.2(react@19.2.4))(immer@10.1.1)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)
       '@types/react': 19.1.8
-      next: 16.1.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      react: 19.1.0
+      next: 16.1.5(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      react: 19.2.4
     optionalDependencies:
       '@descope/web-js-sdk': 1.33.5
     transitivePeerDependencies:
@@ -581,20 +581,20 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@descope/react-sdk@2.14.26(@reduxjs/toolkit@2.8.2(react@19.1.0))(@types/react@19.1.8)(immer@10.1.1)(react@19.1.0)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)':
+  '@descope/react-sdk@2.14.26(@reduxjs/toolkit@2.8.2(react@19.2.4))(@types/react@19.1.8)(immer@10.1.1)(react@19.2.4)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)':
     dependencies:
-      '@descope/access-key-management-widget': 0.4.31(react@19.1.0)
-      '@descope/applications-portal-widget': 0.3.31(react@19.1.0)
-      '@descope/audit-management-widget': 0.4.31(react@19.1.0)
+      '@descope/access-key-management-widget': 0.4.31(react@19.2.4)
+      '@descope/applications-portal-widget': 0.3.31(react@19.2.4)
+      '@descope/audit-management-widget': 0.4.31(react@19.2.4)
       '@descope/core-js-sdk': 2.44.4
-      '@descope/role-management-widget': 0.3.32(react@19.1.0)
+      '@descope/role-management-widget': 0.3.32(react@19.2.4)
       '@descope/sdk-helpers': 0.3.0
-      '@descope/user-management-widget': 0.7.31(react@19.1.0)
-      '@descope/user-profile-widget': 0.5.3(react@19.1.0)
-      '@descope/web-component': 3.43.19(@reduxjs/toolkit@2.8.2(react@19.1.0))(immer@10.1.1)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)
+      '@descope/user-management-widget': 0.7.31(react@19.2.4)
+      '@descope/user-profile-widget': 0.5.3(react@19.2.4)
+      '@descope/web-component': 3.43.19(@reduxjs/toolkit@2.8.2(react@19.2.4))(immer@10.1.1)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)
       '@descope/web-js-sdk': 1.33.5
       '@types/react': 19.1.8
-      react: 19.1.0
+      react: 19.2.4
     transitivePeerDependencies:
       - '@reduxjs/toolkit'
       - immer
@@ -602,13 +602,13 @@ snapshots:
       - redux
       - redux-thunk
 
-  '@descope/role-management-widget@0.3.32(react@19.1.0)':
+  '@descope/role-management-widget@0.3.32(react@19.2.4)':
     dependencies:
       '@descope/sdk-component-drivers': 0.2.52
       '@descope/sdk-helpers': 0.3.0
-      '@descope/sdk-mixins': 0.13.6(@reduxjs/toolkit@2.8.2(react@19.1.0))(immer@10.1.1)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)
+      '@descope/sdk-mixins': 0.13.6(@reduxjs/toolkit@2.8.2(react@19.2.4))(immer@10.1.1)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)
       '@descope/web-js-sdk': 1.33.5
-      '@reduxjs/toolkit': 2.8.2(react@19.1.0)
+      '@reduxjs/toolkit': 2.8.2(react@19.2.4)
       immer: 10.1.1
       redux: 5.0.1
       redux-thunk: 3.1.0(redux@5.0.1)
@@ -627,23 +627,23 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@descope/sdk-mixins@0.13.6(@reduxjs/toolkit@2.8.2(react@19.1.0))(immer@10.1.1)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)':
+  '@descope/sdk-mixins@0.13.6(@reduxjs/toolkit@2.8.2(react@19.2.4))(immer@10.1.1)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)':
     dependencies:
       '@descope/sdk-component-drivers': 0.2.52
       '@descope/sdk-helpers': 0.3.0
-      '@reduxjs/toolkit': 2.8.2(react@19.1.0)
+      '@reduxjs/toolkit': 2.8.2(react@19.2.4)
       immer: 10.1.1
       redux: 5.0.1
       redux-thunk: 3.1.0(redux@5.0.1)
       tslib: 2.8.1
 
-  '@descope/user-management-widget@0.7.31(react@19.1.0)':
+  '@descope/user-management-widget@0.7.31(react@19.2.4)':
     dependencies:
       '@descope/sdk-component-drivers': 0.2.52
       '@descope/sdk-helpers': 0.3.0
-      '@descope/sdk-mixins': 0.13.6(@reduxjs/toolkit@2.8.2(react@19.1.0))(immer@10.1.1)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)
+      '@descope/sdk-mixins': 0.13.6(@reduxjs/toolkit@2.8.2(react@19.2.4))(immer@10.1.1)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)
       '@descope/web-js-sdk': 1.33.5
-      '@reduxjs/toolkit': 2.8.2(react@19.1.0)
+      '@reduxjs/toolkit': 2.8.2(react@19.2.4)
       immer: 10.1.1
       libphonenumber-js: 1.11.17
       redux: 5.0.1
@@ -654,14 +654,14 @@ snapshots:
       - react
       - react-redux
 
-  '@descope/user-profile-widget@0.5.3(react@19.1.0)':
+  '@descope/user-profile-widget@0.5.3(react@19.2.4)':
     dependencies:
       '@descope/sdk-component-drivers': 0.2.52
       '@descope/sdk-helpers': 0.3.0
-      '@descope/sdk-mixins': 0.13.6(@reduxjs/toolkit@2.8.2(react@19.1.0))(immer@10.1.1)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)
-      '@descope/web-component': 3.43.19(@reduxjs/toolkit@2.8.2(react@19.1.0))(immer@10.1.1)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)
+      '@descope/sdk-mixins': 0.13.6(@reduxjs/toolkit@2.8.2(react@19.2.4))(immer@10.1.1)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)
+      '@descope/web-component': 3.43.19(@reduxjs/toolkit@2.8.2(react@19.2.4))(immer@10.1.1)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)
       '@descope/web-js-sdk': 1.33.5
-      '@reduxjs/toolkit': 2.8.2(react@19.1.0)
+      '@reduxjs/toolkit': 2.8.2(react@19.2.4)
       immer: 10.1.1
       redux: 5.0.1
       redux-thunk: 3.1.0(redux@5.0.1)
@@ -673,11 +673,11 @@ snapshots:
       - react
       - react-redux
 
-  '@descope/web-component@3.43.19(@reduxjs/toolkit@2.8.2(react@19.1.0))(immer@10.1.1)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)':
+  '@descope/web-component@3.43.19(@reduxjs/toolkit@2.8.2(react@19.2.4))(immer@10.1.1)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)':
     dependencies:
       '@descope/escape-markdown': 0.1.5
       '@descope/sdk-helpers': 0.3.0
-      '@descope/sdk-mixins': 0.13.6(@reduxjs/toolkit@2.8.2(react@19.1.0))(immer@10.1.1)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)
+      '@descope/sdk-mixins': 0.13.6(@reduxjs/toolkit@2.8.2(react@19.2.4))(immer@10.1.1)(redux-thunk@3.1.0(redux@5.0.1))(redux@5.0.1)
       '@descope/web-js-sdk': 1.33.5
       '@fingerprintjs/fingerprintjs-pro': 3.11.6
       tslib: 2.8.1
@@ -827,7 +827,7 @@ snapshots:
   '@next/swc-win32-x64-msvc@16.1.5':
     optional: true
 
-  '@reduxjs/toolkit@2.8.2(react@19.1.0)':
+  '@reduxjs/toolkit@2.8.2(react@19.2.4)':
     dependencies:
       '@standard-schema/spec': 1.0.0
       '@standard-schema/utils': 0.3.0
@@ -836,7 +836,7 @@ snapshots:
       redux-thunk: 3.1.0(redux@5.0.1)
       reselect: 5.1.1
     optionalDependencies:
-      react: 19.1.0
+      react: 19.2.4
 
   '@standard-schema/spec@1.0.0': {}
 
@@ -887,16 +887,16 @@ snapshots:
 
   nanoid@3.3.11: {}
 
-  next@16.1.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+  next@16.1.5(react-dom@19.2.4(react@19.2.4))(react@19.2.4):
     dependencies:
       '@next/env': 16.1.5
       '@swc/helpers': 0.5.15
       baseline-browser-mapping: 2.9.19
       caniuse-lite: 1.0.30001727
       postcss: 8.4.31
-      react: 19.1.0
-      react-dom: 19.1.0(react@19.1.0)
-      styled-jsx: 5.1.6(react@19.1.0)
+      react: 19.2.4
+      react-dom: 19.2.4(react@19.2.4)
+      styled-jsx: 5.1.6(react@19.2.4)
     optionalDependencies:
       '@next/swc-darwin-arm64': 16.1.5
       '@next/swc-darwin-x64': 16.1.5
@@ -923,12 +923,12 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  react-dom@19.1.0(react@19.1.0):
+  react-dom@19.2.4(react@19.2.4):
     dependencies:
-      react: 19.1.0
-      scheduler: 0.26.0
+      react: 19.2.4
+      scheduler: 0.27.0
 
-  react@19.1.0: {}
+  react@19.2.4: {}
 
   redux-thunk@3.1.0(redux@5.0.1):
     dependencies:
@@ -938,7 +938,7 @@ snapshots:
 
   reselect@5.1.1: {}
 
-  scheduler@0.26.0: {}
+  scheduler@0.27.0: {}
 
   semver@7.7.3:
     optional: true
@@ -977,10 +977,10 @@ snapshots:
 
   source-map-js@1.2.1: {}
 
-  styled-jsx@5.1.6(react@19.1.0):
+  styled-jsx@5.1.6(react@19.2.4):
     dependencies:
       client-only: 0.0.1
-      react: 19.1.0
+      react: 19.2.4
 
   tr46@0.0.3: {}
 
