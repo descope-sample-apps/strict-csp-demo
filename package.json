@@ -12,7 +12,7 @@
     "@descope/nextjs-sdk": "^0.14.0",
     "next": "16.2.11",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.2.7"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",
